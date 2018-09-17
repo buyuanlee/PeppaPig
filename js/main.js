@@ -10,7 +10,7 @@ function writeCode(prefix, code, speed, fn) {
         n += 1
         domCode.innerHTML = Prism.highlight(prefix + code.substring(0, n), Prism.languages.css)
         myStyle.innerHTML = prefix + code.substring(0, n)
-        domCode.scrollIntoView({behavior: "instant", block: "end", inline: "nearest"})
+        domCode.scrollTop = domCode.scrollHeight
         if (n >= code.length) {
             window.clearInterval(clock)
             fn.call()

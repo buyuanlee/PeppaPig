@@ -2,9 +2,8 @@ var cssCode = window.cssCode = `
 /* 先准备一个下代码的地方吧 */
 #code {
     position: fixed;
-    width: 30%;
-    height: 100vh;
-    right: 0;
+    width: 100%;
+    height: 30%;
     background-color: rgba(0, 0, 0, 0.6);
     color:#fff;
     overflow: auto;
@@ -15,7 +14,6 @@ var cssCode = window.cssCode = `
 #paper {
     width: 70%;
     height: 100%;
-    text-align: center;
 }
 
 /*先来一片蓝天*/
